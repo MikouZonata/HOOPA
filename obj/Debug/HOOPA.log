@@ -1,0 +1,8 @@
+﻿  AssignmentFive.cpp
+  main.cpp
+  ofApp.cpp
+src\Opdracht5\AssignmentFive.cpp(25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  HOOPA.vcxproj -> C:\Users\Mikou\Desktop\Work\C++\of_v0.9.3_vs_release\apps\HOOPA\HOOPA\bin\HOOPA_debug.exe
+  HOOPA.vcxproj -> bin\HOOPA_debug.pdb (Full PDB)
+  
+  	                   9	C:\Users\Mikou\Desktop\Work\C++\of_v0.9.3_vs_release\export\vs\Win32\
