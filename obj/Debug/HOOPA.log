@@ -1,8 +1,0 @@
-﻿  AssignmentOne.cpp
-src\Opdracht1\AssignmentOne.cpp(50): warning C4018: '<': signed/unsigned mismatch
-src\Opdracht1\AssignmentOne.cpp(63): warning C4018: '<': signed/unsigned mismatch
-     Creating library bin\HOOPA_debug.lib and object bin\HOOPA_debug.exp
-  HOOPA.vcxproj -> C:\Users\Mikou\Desktop\Work\C++\of_v0.9.3_vs_release\apps\HOOPA\HOOPA\bin\HOOPA_debug.exe
-  HOOPA.vcxproj -> bin\HOOPA_debug.pdb (Full PDB)
-  
-  	                   9	C:\Users\Mikou\Desktop\Work\C++\of_v0.9.3_vs_release\export\vs\Win32\
