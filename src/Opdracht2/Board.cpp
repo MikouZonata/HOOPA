@@ -15,7 +15,7 @@ namespace NSAssignmentTwo {
 				else
 					nextCellAlive = true;
 
-				cells[x].push_back(new Cell(nextCellAlive));
+				cells[x].push_back(Cell(nextCellAlive));
 			}
 		}
 	}
@@ -38,38 +38,37 @@ namespace NSAssignmentTwo {
 			for (int y = 0; y < boardHeight; y++) {
 				//Find living neightbours
 				int livingNeighbours = 0;
-				if (x > 0 && cells[x - 1][y]->aliveCurrently) {
+				if (x > 0 && cells[x - 1][y].aliveCurrently) {
 					livingNeighbours++;
 				}
-				if (x < boardWidth - 1 && cells[x + 1][y]->aliveCurrently) {
+				if (x < boardWidth - 1 && cells[x + 1][y].aliveCurrently) {
 					livingNeighbours++;
 				}
-				if (y > 0 && cells[x][y - 1]->aliveCurrently) {
+				if (y > 0 && cells[x][y - 1].aliveCurrently) {
 					livingNeighbours++;
 				}
-				if (y < boardHeight - 1 && cells[x][y + 1]->aliveCurrently) {
+				if (y < boardHeight - 1 && cells[x][y + 1].aliveCurrently) {
 					livingNeighbours++;
 				}
 
 				//Affect cell based on living neighbours and chosen strategy
-				Cell* cell = cells[x][y];
-				cell->aliveNext = strategy->checkCell(*cell, livingNeighbours);
+				cells[x][y].aliveNext = strategy->checkCell(cells[x][y], livingNeighbours);
 			}
 		}
 
-		for (vector<Cell*> collumn : cells) {
-			for (Cell* c : collumn) {
-				c->updateState();
+		for (int x = 0; x < boardWidth; x++) {
+			for (int y = 0; y < boardHeight; y++) {
+				cells[x][y].updateState();
 			}
 		}
 	}
 
-	void Board::drawBoard()
+	void Board::drawBoard() const
 	{
 		for (int y = 0; y < boardHeight; y++) {
 			string row = "";
 			for (int x = 0; x < boardWidth; x++) {
-				if (cells[x][y]->aliveCurrently)
+				if (cells[x][y].aliveCurrently)
 					ofSetColor(cellAliveColor);
 				else
 					ofSetColor(cellDeadColor);

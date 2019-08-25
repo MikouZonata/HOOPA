@@ -193,7 +193,7 @@
     <ClInclude Include="src\Assignment.h" />
     <ClInclude Include="src\Opdracht4\AssignmentFour.h" />
     <ClInclude Include="src\Opdracht3\AssignmentThree.h" />
-    <ClInclude Include="src\Opdracht3\Boy.h" />
+    <ClInclude Include="src\Opdracht3\NPC.h" />
     <ClInclude Include="src\Opdracht2\Cell.h" />
     <ClInclude Include="src\Opdracht2\Strategies\ConwayStrategy.h" />
     <ClInclude Include="src\Opdracht3\Elf.h" />

@@ -1,5 +1,6 @@
 #pragma once
 #include<vector>
+#include"../Assignment.h"
 #include"Elf.h"
 #include"Orc.h"
 #include"FarmerRole.h"
@@ -7,12 +8,16 @@
 #include"SoldierRole.h"
 
 namespace NSAssignmentThree {
-	class AssignmentThree {
+	class AssignmentThree : public Assignment {
 	private:
-		vector<Boy> boys;
+		vector<NPC*> npcs;
 
 	public:
 		AssignmentThree();
 		~AssignmentThree() {}
+
+		void setup() override {}
+		void update() override {}
+		void draw() override {}
 	};
 }

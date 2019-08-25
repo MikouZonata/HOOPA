@@ -12,8 +12,12 @@ namespace NSAssignmentFour {
 
 	public:
 		Queue() {}
+		~Queue() {}
+		Queue(const Queue& other) {
+			memcpy(collection, other.collection, collection.size() + 1);
+		}
 
-		void put(T element) {
+		void put(const T& element) {
 			collection.push_back(element);
 		}
 
@@ -24,13 +28,16 @@ namespace NSAssignmentFour {
 			return value;
 		}
 
-		int size()
+		int size() const
 		{
 			return collection.size();
 		}
 
+		T operator[](const int& index) {
+			return collection[index];
+		}
 
-		void print()
+		void print() const
 		{
 			cout << "Printing Queue:\n";
 			for (const T& value : collection) {
@@ -39,6 +46,5 @@ namespace NSAssignmentFour {
 			cout << "\n";
 		}
 
-		~Queue() {}
 	};
 }

@@ -23,7 +23,7 @@ public:
 	//AssignmentThree()		== Orc & Elves
 	//AssignmentFour()		== Collections & Generics
 	//AssignmentFive()		== Concurrent Vector & Threads
-	const unique_ptr<Assignment> activeAssignment = make_unique<AssignmentOne>();
+	unique_ptr<Assignment> activeAssignment = make_unique<AssignmentOne>();
 
 	void setup();
 	void update();

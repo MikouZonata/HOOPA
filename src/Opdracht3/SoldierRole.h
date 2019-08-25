@@ -6,7 +6,7 @@ private:
 
 public:
 	SoldierRole() {
-		this->role = "Shaman";
+		this->role = "Soldier";
 	}
 	~SoldierRole() {}
 };

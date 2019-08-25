@@ -90,9 +90,6 @@
     <ClInclude Include="src\Opdracht3\AssignmentThree.h">
       <Filter>src\Opdracht3</Filter>
     </ClInclude>
-    <ClInclude Include="src\Opdracht3\Boy.h">
-      <Filter>src\Opdracht3</Filter>
-    </ClInclude>
     <ClInclude Include="src\Opdracht3\Elf.h">
       <Filter>src\Opdracht3</Filter>
     </ClInclude>
@@ -131,6 +128,9 @@
     <ClInclude Include="src\Opdracht5\concurrent_vector.h" />
     <ClInclude Include="src\Opdracht2\Strategies\TanglyStrategy.h">
       <Filter>src\Opdracht2\Strategies</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Opdracht3\NPC.h">
+      <Filter>src\Opdracht3</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

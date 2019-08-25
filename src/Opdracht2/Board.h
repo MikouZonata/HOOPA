@@ -23,20 +23,19 @@ namespace NSAssignmentTwo {
 		const ofColor cellAliveColor = ofColor(40, 170, 220, 255);
 		const ofColor cellDeadColor = ofColor(80, 60, 70, 255);
 
-		vector<vector<Cell*>> cells;
-		Strategy *strategy;
+		vector<vector<Cell>> cells;
+		const Strategy* strategy;
 
-		float oldTime = 0;
-		float updateTimer = 0;
+		mutable float oldTime = 0;
+		mutable float updateTimer = 0;
 		const float secondsPerUpdate = .32f;
 
 		void createBoard();
 		void updateCellStates();
-		void drawBoard();
+		void drawBoard() const;
 
 	public:
-		Board(Strategy* strategy) {
-			this->strategy = strategy;
+		Board(const Strategy* strategy) : strategy(strategy) {
 			createBoard();
 		}
 

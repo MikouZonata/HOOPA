@@ -4,6 +4,6 @@
 namespace NSAssignmentTwo {
 	class Strategy {
 	public:
-		virtual bool checkCell(Cell cell, int aliveNeighbours) const = 0;
+		virtual const bool checkCell(const Cell& cell, const int& aliveNeighbours) const = 0;
 	};
 }

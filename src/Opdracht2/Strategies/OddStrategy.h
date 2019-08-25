@@ -5,6 +5,6 @@
 namespace NSAssignmentTwo {
 	class OddStrategy : public Strategy {
 	public:
-		bool checkCell(Cell cell, int aliveNeighbours) const override;
+		const bool checkCell(const Cell& cell, const int& aliveNeighbours) const override;
 	};
 }

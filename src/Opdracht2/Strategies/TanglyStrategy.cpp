@@ -2,7 +2,7 @@
 #include"TanglyStrategy.h"
 
 namespace NSAssignmentTwo {
-	bool TanglyStrategy::checkCell(Cell cell, int livingNeighbours) const {
+	const bool TanglyStrategy::checkCell(const Cell& cell, const int& livingNeighbours) const {
 		if (cell.aliveCurrently) {
 			if (livingNeighbours > 2 || livingNeighbours == 0)
 				return false;

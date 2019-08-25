@@ -2,7 +2,7 @@
 #include"ConwayStrategy.h"
 
 namespace NSAssignmentTwo {
-	bool ConwayStrategy::checkCell(Cell cell, int livingNeighbours) const {
+	const bool ConwayStrategy::checkCell(const Cell& cell, const int& livingNeighbours) const {
 		if (cell.aliveCurrently) {
 			if (livingNeighbours < 2 || livingNeighbours > 3) {
 				return false;

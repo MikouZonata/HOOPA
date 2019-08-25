@@ -7,7 +7,7 @@ namespace NSAssignmentTwo {
 		bool aliveCurrently;
 		bool aliveNext;
 
-		Cell(bool alive) {
+		Cell(const bool& alive) {
 			aliveCurrently = alive;
 		}
 

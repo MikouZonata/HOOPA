@@ -13,11 +13,11 @@ namespace NSAssignmentTwo {
 	class AssignmentTwo : public Assignment
 	{
 	private:
-		ConwayStrategy conwayStrategy;
-		TanglyStrategy tanglyStrategy;
-		OddStrategy oddStrategy;
+		const ConwayStrategy conwayStrategy;
+		const TanglyStrategy tanglyStrategy;
+		const OddStrategy oddStrategy;
 		//Choose strategy by changing the type of strategy below. Options: conwayStrategy, tanglyStrategy or oddStrategy
-		Strategy* strategy = &conwayStrategy;
+		const Strategy* strategy = &conwayStrategy;
 
 		Board board{ strategy };
 
@@ -33,6 +33,7 @@ namespace NSAssignmentTwo {
 		void draw() override {
 			ofSetColor(0, 0, 0, 255);
 			ofDrawRectangle(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
+
 			board.draw();
 		}
 

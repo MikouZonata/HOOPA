@@ -1,27 +1,24 @@
 #pragma once
 #include<iostream>
 #include<string>
-#include "Boy.h"
+#include "NPC.h"
 #include"RoleDecorator.h"
 
 using namespace std;
 
 namespace NSAssignmentThree {
-	class Orc : public Boy {
+	class Orc : public NPC {
 	private:
-		string name;
-		RoleDecorator role;
-
-		void render() override {
-			cout << "Orc " << name + " is a " << role.role << "!\n";
-		}
+		const string name;
+		const RoleDecorator role;
 
 	public:
-		Orc(string name, RoleDecorator role) {
-			this->name = name;
-			this->role = role;
-		}
+		Orc(const string& name, const RoleDecorator& role) : name(name), role(role) {}
 		~Orc() {}
+
+		const void render() override {
+			cout << "Orc " << name + " is a " << role.role << "!\n";
+		}
 
 	};
 }

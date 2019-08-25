@@ -2,7 +2,7 @@
 #include"OddStrategy.h"
 
 namespace NSAssignmentTwo {
-	bool OddStrategy::checkCell(Cell cell, int livingNeighbours) const {
+	const bool OddStrategy::checkCell(const Cell& cell, const int& livingNeighbours) const {
 		if (cell.aliveCurrently) {
 			if (livingNeighbours == 0 || livingNeighbours == 2 || livingNeighbours == 4) {
 				return false;
