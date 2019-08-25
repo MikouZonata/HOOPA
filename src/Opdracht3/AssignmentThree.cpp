@@ -2,20 +2,14 @@
 
 namespace NSAssignmentThree {
 	AssignmentThree::AssignmentThree() {
-		boys.push_back(new Elf("Orlando Bloom", new SoldierRole()));
-		boys.push_back(new Elf("Johnny Depp", new FarmerRole()));
-		boys.push_back(new Elf("Jim Carrey", new ShamanRole()));
-		boys.push_back(new Orc("Bas Boomhakker", new SoldierRole()));
-		boys.push_back(new Orc("Harald Hark", new ShamanRole()));
-		boys.push_back(new Orc("Pim Pruimplukker", new FarmerRole()));
+		boys.push_back(Elf("Orlando Bloom", SoldierRole()));
+		boys.push_back(Elf("Johnny Depp", FarmerRole()));
+		boys.push_back(Elf("Jim Carrey", ShamanRole()));
+		boys.push_back(Orc("Bas Boomhakker", SoldierRole()));
+		boys.push_back(Orc("Harald Hark", ShamanRole()));
+		boys.push_back(Orc("Pim Pruimplukker", FarmerRole()));
 
-		for (Boy* b : boys)
-			b->render();
-	}
-
-	AssignmentThree::~AssignmentThree() {
-		for (Boy* b : boys) {
-			delete b;
-		}
+		for (Boy b : boys)
+			b.render();
 	}
 }

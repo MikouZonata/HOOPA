@@ -28,9 +28,6 @@
     <ClCompile Include="src\Opdracht4\AssignmentFour.cpp">
       <Filter>src\Opdracht4</Filter>
     </ClCompile>
-    <ClCompile Include="src\Opdracht2\Strategies\DominosStrategy.cpp">
-      <Filter>src\Opdracht2\Strategies</Filter>
-    </ClCompile>
     <ClCompile Include="src\Opdracht2\Strategies\OddStrategy.cpp">
       <Filter>src\Opdracht2\Strategies</Filter>
     </ClCompile>
@@ -38,6 +35,9 @@
       <Filter>src\Opdracht2\Strategies</Filter>
     </ClCompile>
     <ClCompile Include="src\Opdracht5\AssignmentFive.cpp" />
+    <ClCompile Include="src\Opdracht2\Strategies\TanglyStrategy.cpp">
+      <Filter>src\Opdracht2\Strategies</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -118,9 +118,6 @@
       <Filter>src\Opdracht4</Filter>
     </ClInclude>
     <ClInclude Include="src\Assignment.h" />
-    <ClInclude Include="src\Opdracht2\Strategies\DominosStrategy.h">
-      <Filter>src\Opdracht2\Strategies</Filter>
-    </ClInclude>
     <ClInclude Include="src\Opdracht2\Strategies\OddStrategy.h">
       <Filter>src\Opdracht2\Strategies</Filter>
     </ClInclude>
@@ -132,6 +129,9 @@
     </ClInclude>
     <ClInclude Include="src\Opdracht5\AssignmentFive.h" />
     <ClInclude Include="src\Opdracht5\concurrent_vector.h" />
+    <ClInclude Include="src\Opdracht2\Strategies\TanglyStrategy.h">
+      <Filter>src\Opdracht2\Strategies</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc" />

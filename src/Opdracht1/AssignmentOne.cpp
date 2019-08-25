@@ -30,6 +30,7 @@ namespace NSAssignmentOne {
 		//Print alle modules met bijbehorende docent en studenten.
 		cout << "\nPrinting list of modules. \n ======== \n";
 		printModules();
+
 		//Print de totale EC van alle studenten.
 		cout << "\nPrinting total EC acquired by students. \n ======== \n";
 		printECTotal();
@@ -59,18 +60,15 @@ namespace NSAssignmentOne {
 
 	void AssignmentOne::printECTotal() {
 		cout << "Printing EC Total.\n";
-		for (Student* s : students) {
+		for (int i = 0; i < students.size(); i++) {
 			int ecTotal = 0;
 			for (Module* m : modules) {
-				if (find(m->students.begin(), m->students.end(), s) != m->students.end()) {
+				if (find(m->students.begin(), m->students.end(), students[i]) != m->students.end()) {
 					ecTotal += m->ec;
 				}
 			}
-			cout << "Student " << s->name << " has acquired " << ecTotal << ".\n\n";
+			cout << "Student " << students[i]->name << " has acquired " << ecTotal << " ec total.\n";
 		}
-	}
-
-	AssignmentOne::~AssignmentOne() {
-
+		cout << endl;
 	}
 }

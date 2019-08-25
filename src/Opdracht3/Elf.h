@@ -10,19 +10,18 @@ namespace NSAssignmentThree {
 	class Elf : public Boy {
 	private:
 		string name;
-		RoleDecorator* role;
+		RoleDecorator role;
 
 		void render() override {
-			cout << "Elf " << name + " is a " << role->role << "!\n";
+			cout << "Elf " << name + " is a " << role.role << "!\n";
 		}
 
 	public:
-		Elf(string name, RoleDecorator* role) {
+		Elf(string name, RoleDecorator role) {
 			this->name = name;
 			this->role = role;
 		}
-		~Elf() {
-			delete role;
-		}
+		~Elf() {}
+
 	};
 }

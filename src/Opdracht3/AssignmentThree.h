@@ -9,10 +9,10 @@
 namespace NSAssignmentThree {
 	class AssignmentThree {
 	private:
-		vector<Boy*> boys;
+		vector<Boy> boys;
 
 	public:
 		AssignmentThree();
-		~AssignmentThree();
+		~AssignmentThree() {}
 	};
 }

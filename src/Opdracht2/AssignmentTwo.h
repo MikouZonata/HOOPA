@@ -4,7 +4,7 @@
 #include "../Assignment.h"
 #include "Board.h"
 #include "Strategies/ConwayStrategy.h"
-#include "Strategies/DominosStrategy.h"
+#include "Strategies/TanglyStrategy.h"
 #include "Strategies/OddStrategy.h"
 
 using namespace std;
@@ -13,8 +13,12 @@ namespace NSAssignmentTwo {
 	class AssignmentTwo : public Assignment
 	{
 	private:
-		//Choose strategy by changing the type of strategy below. Options: ConwayStrategy, DominosStrategy or OddStrategy
-		Strategy* strategy = new ConwayStrategy();
+		ConwayStrategy conwayStrategy;
+		TanglyStrategy tanglyStrategy;
+		OddStrategy oddStrategy;
+		//Choose strategy by changing the type of strategy below. Options: conwayStrategy, tanglyStrategy or oddStrategy
+		Strategy* strategy = &conwayStrategy;
+
 		Board board{ strategy };
 
 	public:
@@ -27,6 +31,8 @@ namespace NSAssignmentTwo {
 		}
 
 		void draw() override {
+			ofSetColor(0, 0, 0, 255);
+			ofDrawRectangle(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
 			board.draw();
 		}
 

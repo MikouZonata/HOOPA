@@ -15,7 +15,7 @@ namespace NSAssignmentOne {
 		string name;
 		int ec;
 		vector<Student*> students;
-		Teacher *teacher;
+		Teacher* teacher;
 
 		~Module();
 	};

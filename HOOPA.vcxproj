@@ -178,7 +178,7 @@
     <ClCompile Include="src\Opdracht4\AssignmentFour.cpp" />
     <ClCompile Include="src\Opdracht3\AssignmentThree.cpp" />
     <ClCompile Include="src\Opdracht2\Strategies\ConwayStrategy.cpp" />
-    <ClCompile Include="src\Opdracht2\Strategies\DominosStrategy.cpp" />
+    <ClCompile Include="src\Opdracht2\Strategies\TanglyStrategy.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Opdracht1\Module.cpp" />
     <ClCompile Include="src\Opdracht2\Strategies\OddStrategy.cpp" />
@@ -201,7 +201,7 @@
     <ClInclude Include="src\Opdracht4\Queue.h" />
     <ClInclude Include="src\Opdracht3\RoleDecorator.h" />
     <ClInclude Include="src\Opdracht2\Strategies\OddStrategy.h" />
-    <ClInclude Include="src\Opdracht2\Strategies\DominosStrategy.h" />
+    <ClInclude Include="src\Opdracht2\Strategies\TanglyStrategy.h" />
     <ClInclude Include="src\Opdracht1\Module.h" />
     <ClInclude Include="src\ofApp.h" />
     <ClInclude Include="src\Opdracht3\Orc.h" />

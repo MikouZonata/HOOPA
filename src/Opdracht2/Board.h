@@ -4,7 +4,7 @@
 #include <array>
 #include <string>
 #include "Strategies/ConwayStrategy.h"
-#include "Strategies/DominosStrategy.h"
+#include "Strategies/TanglyStrategy.h"
 #include "Strategies/OddStrategy.h"
 #include "ofGraphics.h"
 #include "ofUtils.h"
@@ -20,8 +20,8 @@ namespace NSAssignmentTwo {
 		const int boardHeight = 60;
 		const int cellSize = 12;
 		const int distanceBetweenCells = 2;
-		const ofColor cellAliveColor = ofColor(70, 140, 220, 255);
-		const ofColor cellDeadColor = ofColor(60, 40, 40, 255);
+		const ofColor cellAliveColor = ofColor(40, 170, 220, 255);
+		const ofColor cellDeadColor = ofColor(80, 60, 70, 255);
 
 		vector<vector<Cell*>> cells;
 		Strategy *strategy;

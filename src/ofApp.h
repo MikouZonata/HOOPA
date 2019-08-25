@@ -1,4 +1,5 @@
 #pragma once
+#include <memory>
 #include "ofMain.h"
 #include "Opdracht1\AssignmentOne.h"
 #include "Opdracht2\AssignmentTwo.h"
@@ -16,13 +17,13 @@ using namespace std;
 
 class ofApp : public ofBaseApp {
 public:
-	//Pick assignment to run below.
+	//Pick assignment to run below by typing the name of of its type into make_unique<...>()
 	//AssignmentOne()		== Modules, Teachers & Students
 	//AssignmentTwo()		== Conway's Game of Life
 	//AssignmentThree()		== Orc & Elves
 	//AssignmentFour()		== Collections & Generics
 	//AssignmentFive()		== Concurrent Vector & Threads
-	unique_ptr<Assignment> activeAssignment(AssignmentFive);
+	unique_ptr<Assignment> activeAssignment = make_unique<AssignmentOne>();
 
 	void setup();
 	void update();
